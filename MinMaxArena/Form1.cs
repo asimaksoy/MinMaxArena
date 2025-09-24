@@ -229,9 +229,10 @@ namespace MinMaxArena
 
         private void checkOtomatik_CheckedChanged(object sender, EventArgs e)
         {
+            Random random = new Random();
             if (checkOtomatik.Checked)
             {
-                timer1.Interval = 1500;
+                timer1.Interval = random.Next(500, 2000);
                 timer1.Start();
             }
         }
