@@ -232,7 +232,7 @@ namespace MinMaxArena
             Random random = new Random();
             if (checkOtomatik.Checked)
             {
-                timer1.Interval = random.Next(500, 2000);
+                timer1.Interval = random.Next(700, 2000);
                 timer1.Start();
             }
         }
