@@ -25,6 +25,7 @@ namespace MinMaxArena
         public int MaxAtak;
         public int Xp;
         public int SonrakiSeviyeXpDegeri;
+        public int toplamPuan=0;
         public Image savunma;
         public Image bitis;
         public Image saldiri;
@@ -51,6 +52,7 @@ namespace MinMaxArena
                     saldiri = (Image)Properties.Resources.ResourceManager.GetObject("savasci1");
                     savunma = (Image)Properties.Resources.ResourceManager.GetObject("savasci2");
                     bitis = (Image)Properties.Resources.ResourceManager.GetObject("savasci3");
+                    toplamPuan = 0;
                     break;
                 case KarakterTipi.Sihirbaz:
                     MaxSaglik = 100;
@@ -59,6 +61,7 @@ namespace MinMaxArena
                     saldiri = (Image)Properties.Resources.ResourceManager.GetObject("sihirbaz1");
                     savunma = (Image)Properties.Resources.ResourceManager.GetObject("sihirbaz2");
                     bitis = (Image)Properties.Resources.ResourceManager.GetObject("sihirbaz3");
+                    toplamPuan = 0;
                     break;
                 case KarakterTipi.Okcu:
                     MaxSaglik = 100;
@@ -67,6 +70,7 @@ namespace MinMaxArena
                     saldiri = (Image)Properties.Resources.ResourceManager.GetObject("okcu1");
                     savunma = (Image)Properties.Resources.ResourceManager.GetObject("okcu2");
                     bitis = (Image)Properties.Resources.ResourceManager.GetObject("okcu3");
+                    toplamPuan = 0;
                     break;
                 default:
                     break;

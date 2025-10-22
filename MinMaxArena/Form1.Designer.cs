@@ -1,6 +1,6 @@
 ﻿namespace MinMaxArena
 {
-    partial class Form1
+    partial class FrmOyun
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOyun));
             this.btnOyunaBasla = new System.Windows.Forms.Button();
             this.lblSavasci1Ad = new System.Windows.Forms.Label();
             this.lblSavasci2Ad = new System.Windows.Forms.Label();
@@ -44,12 +45,20 @@
             this.lblSavasci2Can = new System.Windows.Forms.Label();
             this.listLog = new System.Windows.Forms.ListBox();
             this.lblRound = new System.Windows.Forms.Label();
-            this.picBoxSavasci1 = new System.Windows.Forms.PictureBox();
-            this.picBoxSavasci2 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.checkOtomatik = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxSavasci1)).BeginInit();
+            this.btnSkor = new System.Windows.Forms.Button();
+            this.lblAtakGucu = new System.Windows.Forms.Label();
+            this.picSaldiriYonu = new System.Windows.Forms.PictureBox();
+            this.picBoxSavasci2 = new System.Windows.Forms.PictureBox();
+            this.picBoxSavasci1 = new System.Windows.Forms.PictureBox();
+            this.picSavasci1Odul = new System.Windows.Forms.PictureBox();
+            this.picSavasci2Odul = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picSaldiriYonu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSavasci2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSavasci1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSavasci1Odul)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSavasci2Odul)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOyunaBasla
@@ -187,24 +196,6 @@
             this.lblRound.Size = new System.Drawing.Size(0, 20);
             this.lblRound.TabIndex = 15;
             // 
-            // picBoxSavasci1
-            // 
-            this.picBoxSavasci1.Location = new System.Drawing.Point(77, 72);
-            this.picBoxSavasci1.Name = "picBoxSavasci1";
-            this.picBoxSavasci1.Size = new System.Drawing.Size(250, 329);
-            this.picBoxSavasci1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBoxSavasci1.TabIndex = 16;
-            this.picBoxSavasci1.TabStop = false;
-            // 
-            // picBoxSavasci2
-            // 
-            this.picBoxSavasci2.Location = new System.Drawing.Point(567, 72);
-            this.picBoxSavasci2.Name = "picBoxSavasci2";
-            this.picBoxSavasci2.Size = new System.Drawing.Size(250, 329);
-            this.picBoxSavasci2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBoxSavasci2.TabIndex = 17;
-            this.picBoxSavasci2.TabStop = false;
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -221,12 +212,86 @@
             this.checkOtomatik.UseVisualStyleBackColor = true;
             this.checkOtomatik.CheckedChanged += new System.EventHandler(this.checkOtomatik_CheckedChanged);
             // 
-            // Form1
+            // btnSkor
+            // 
+            this.btnSkor.Location = new System.Drawing.Point(357, 491);
+            this.btnSkor.Name = "btnSkor";
+            this.btnSkor.Size = new System.Drawing.Size(150, 45);
+            this.btnSkor.TabIndex = 19;
+            this.btnSkor.Text = "Skor Lİstesi";
+            this.btnSkor.UseVisualStyleBackColor = true;
+            this.btnSkor.Click += new System.EventHandler(this.btnSkor_Click);
+            // 
+            // lblAtakGucu
+            // 
+            this.lblAtakGucu.AutoSize = true;
+            this.lblAtakGucu.BackColor = System.Drawing.Color.Transparent;
+            this.lblAtakGucu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAtakGucu.Location = new System.Drawing.Point(387, 364);
+            this.lblAtakGucu.Name = "lblAtakGucu";
+            this.lblAtakGucu.Size = new System.Drawing.Size(0, 25);
+            this.lblAtakGucu.TabIndex = 21;
+            // 
+            // picSaldiriYonu
+            // 
+            this.picSaldiriYonu.Location = new System.Drawing.Point(373, 294);
+            this.picSaldiriYonu.Name = "picSaldiriYonu";
+            this.picSaldiriYonu.Size = new System.Drawing.Size(134, 67);
+            this.picSaldiriYonu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSaldiriYonu.TabIndex = 20;
+            this.picSaldiriYonu.TabStop = false;
+            // 
+            // picBoxSavasci2
+            // 
+            this.picBoxSavasci2.Location = new System.Drawing.Point(567, 72);
+            this.picBoxSavasci2.Name = "picBoxSavasci2";
+            this.picBoxSavasci2.Size = new System.Drawing.Size(250, 329);
+            this.picBoxSavasci2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxSavasci2.TabIndex = 17;
+            this.picBoxSavasci2.TabStop = false;
+            // 
+            // picBoxSavasci1
+            // 
+            this.picBoxSavasci1.Location = new System.Drawing.Point(77, 72);
+            this.picBoxSavasci1.Name = "picBoxSavasci1";
+            this.picBoxSavasci1.Size = new System.Drawing.Size(250, 329);
+            this.picBoxSavasci1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxSavasci1.TabIndex = 16;
+            this.picBoxSavasci1.TabStop = false;
+            // 
+            // picSavasci1Odul
+            // 
+            this.picSavasci1Odul.Image = ((System.Drawing.Image)(resources.GetObject("picSavasci1Odul.Image")));
+            this.picSavasci1Odul.Location = new System.Drawing.Point(77, 72);
+            this.picSavasci1Odul.Name = "picSavasci1Odul";
+            this.picSavasci1Odul.Size = new System.Drawing.Size(50, 61);
+            this.picSavasci1Odul.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSavasci1Odul.TabIndex = 23;
+            this.picSavasci1Odul.TabStop = false;
+            this.picSavasci1Odul.Visible = false;
+            // 
+            // picSavasci2Odul
+            // 
+            this.picSavasci2Odul.Image = ((System.Drawing.Image)(resources.GetObject("picSavasci2Odul.Image")));
+            this.picSavasci2Odul.Location = new System.Drawing.Point(769, 72);
+            this.picSavasci2Odul.Name = "picSavasci2Odul";
+            this.picSavasci2Odul.Size = new System.Drawing.Size(48, 61);
+            this.picSavasci2Odul.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSavasci2Odul.TabIndex = 22;
+            this.picSavasci2Odul.TabStop = false;
+            this.picSavasci2Odul.Visible = false;
+            // 
+            // FrmOyun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1295, 622);
+            this.Controls.Add(this.picSavasci1Odul);
+            this.Controls.Add(this.picSavasci2Odul);
+            this.Controls.Add(this.lblAtakGucu);
+            this.Controls.Add(this.picSaldiriYonu);
+            this.Controls.Add(this.btnSkor);
             this.Controls.Add(this.checkOtomatik);
             this.Controls.Add(this.picBoxSavasci2);
             this.Controls.Add(this.picBoxSavasci1);
@@ -245,10 +310,13 @@
             this.Controls.Add(this.lblSavasci2Ad);
             this.Controls.Add(this.lblSavasci1Ad);
             this.Controls.Add(this.btnOyunaBasla);
-            this.Name = "Form1";
+            this.Name = "FrmOyun";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxSavasci1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSaldiriYonu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSavasci2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSavasci1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSavasci1Odul)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSavasci2Odul)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,6 +343,11 @@
         private System.Windows.Forms.PictureBox picBoxSavasci2;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.CheckBox checkOtomatik;
+        private System.Windows.Forms.Button btnSkor;
+        private System.Windows.Forms.PictureBox picSaldiriYonu;
+        private System.Windows.Forms.Label lblAtakGucu;
+        private System.Windows.Forms.PictureBox picSavasci1Odul;
+        private System.Windows.Forms.PictureBox picSavasci2Odul;
     }
 }
 

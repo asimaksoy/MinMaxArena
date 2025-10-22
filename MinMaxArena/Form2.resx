@@ -117,41 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="kupa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\kupa.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="okcu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\okcu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="okcu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\okcu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="okcu3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\okcu3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Orange_animated_left_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Orange_animated_left_arrow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Orange_animated_right_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Orange_animated_right_arrow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="savasci1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\savasci1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="savasci2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\savasci2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="savasci3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\savasci3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sihirbaz1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\sihirbaz1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sihirbaz2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\sihirbaz2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sihirbaz3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\sihirbaz3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

@@ -63,6 +63,16 @@ namespace MinMaxArena.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kupa {
+            get {
+                object obj = ResourceManager.GetObject("kupa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap okcu1 {
             get {
                 object obj = ResourceManager.GetObject("okcu1", resourceCulture);
@@ -86,6 +96,26 @@ namespace MinMaxArena.Properties {
         internal static System.Drawing.Bitmap okcu3 {
             get {
                 object obj = ResourceManager.GetObject("okcu3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Orange_animated_left_arrow {
+            get {
+                object obj = ResourceManager.GetObject("Orange_animated_left_arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Orange_animated_right_arrow {
+            get {
+                object obj = ResourceManager.GetObject("Orange_animated_right_arrow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
